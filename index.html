@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Api</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-2/css/all.min.css"
+      integrity="sha512-61a6zi50gYXGgd/n9+ZT2/RKnXr6lkRoWlS88AjFdoUHaIDnyBAcoE0Vs/QDU3lK3nCcUowNDqmQ8WaV0yT4qw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Üst Kısım -->
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo" />
+      </div>
+      <div class="search">
+        <div class="search-input-container">
+          <input type="text" placeholder="Ürün ismi giriniz" />
+          <span class="underline"></span>
+        </div>
+        <button>ARA</button>
+      </div>
+      <div class="buttons">
+        <button id="basket">Sepet</button>
+        <span class="notification" id="basket-notification">0</span>
+        <button id="kayit">Kayıt Ol</button>
+        <button>Giriş Yap</button>
+      </div>
+    </header>
+    <!--  Ana İçerik -->
+    <main>
+      <!-- Ürünler -->
+      <h1>Ürünler</h1>
+
+      <section class="kart">
+        <div class="kart-container"></div>
+      </section>
+      
+      <br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+      <!-- Kategoriler -->
+      <section id="categor-sec">
+        <h1>Kategoriler</h1>
+        <div class="categories"></div>
+      </section>
+
+      <br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+      <!-- Modal sepet -->
+
+      <div class="modal-wrapper">
+        <div class="modal">
+          <div id="icon">
+            <img id="close" src="images/close.png" alt="Kapatma butonu" />
+          </div>
+          <div id="list"></div>
+          <p id="total">
+            <span id="count"></span>Toplam: <span id="total-price">100</span> $
+          </p>
+        </div>
+      </div>
+
+      <p class="product-price"></p>
+
+      <div class="kayit-form">
+        <div class="delete">
+          <img src="images/close.png" alt="Kapatma butonu" />
+        </div>
+        <div id="list">
+          <div class="form">
+            <div class="title">Merhaba</div>
+            <div class="subtitle">Sadece 1 dakikanızı alır, hemen kaydolun</div>
+            <div class="input-container ic1">
+              <input id="firstname" class="input" type="text" placeholder=" " />
+              <div class="cut"></div>
+              <label for="firstname" class="placeholder">İsim</label>
+            </div>
+            <div class="input-container ic2">
+              <input id="lastname" class="input" type="text" placeholder=" " />
+              <div class="cut"></div>
+              <label for="lastname" class="placeholder">Soyad</label>
+            </div>
+            <div class="input-container ic2">
+              <input id="email" class="input" type="text" placeholder=" " />
+              <div class="cut cut-short"></div>
+              <label for="email" class="placeholder">Email</label>
+            </div>
+            <button type="text" class="submit">Üye ol</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container"></div>
+
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
